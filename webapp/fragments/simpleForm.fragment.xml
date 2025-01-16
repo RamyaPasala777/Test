@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+ xmlns:core="sap.ui.core"
+ xmlns:form="sap.ui.layout.form"
+ xmlns="sap.m"
+>
+<Dialog id="idDialog" resizable="true" draggable="true">
+<form:SimpleForm id="simpleForm">
+<VBox id="idVbox1">
+<HBox id="idHbox">
+<Label id="idLabel1" text="Name"  width="100px"/>
+<Input id="idInput1" value=""></Input>
+</HBox>
+
+<HBox id="idHbox1">
+<Label id="idLabel2" text="Email" width="100px"/>
+<Input id="idInput2" value=""></Input>
+</HBox>
+
+<HBox id="idHbox2">
+<Label id="idLabel3" text="Phone Number" width="100px"/>
+<Input id="idInput3" value=""></Input>
+</HBox>
+
+<HBox id="idHbox3">
+<Button id="idBtn1" text="SignUp" press="onSignUpPress" type="Emphasized"></Button>
+<Button id="idBtn2" text="close" press="onCloseBtnPress" type="Emphasized"></Button>
+</HBox>
+</VBox>
+</form:SimpleForm>
+</Dialog>
+</core:FragmentDefinition>

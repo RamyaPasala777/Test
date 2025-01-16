@@ -1,0 +1,59 @@
+<mvc:View
+    controllerName="com.app.project1.controller.View1"
+    displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page id="page">
+        <VBox
+            id="VBox"
+            alignContent="Center"
+            alignItems="Center"
+            class="sapUiSmallMarginTop"
+        >
+            <HBox>
+                <Label
+                    id="Label1"
+                    text="Username:"
+                    width="100%"
+                />
+                <Input
+                    id="Input1"
+                    value=""
+                    width="100%"
+                />
+            </HBox>
+            <HBox>
+                <Label
+                    id="Label2"
+                    text="Password:"
+                    width="100%"
+                />
+                <Input
+                    id="input2"
+                    value=""
+                    width="100%"
+                />
+            </HBox>
+            <Button
+                id="Btn"
+                text="Login"
+                type="Emphasized"
+                press="onPress"
+            />
+          <Button
+                id="Btn2"
+                text="SignUp"
+                type="Emphasized"
+                press="onSignupBtnPress"
+            />
+        </VBox>
+        <VBox id="VBox2">
+            <core:Fragment
+                type="XML"
+                fragmentName="com.app.project1.fragments.table"
+            />
+        </VBox>
+    </Page>
+</mvc:View>

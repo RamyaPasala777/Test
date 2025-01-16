@@ -1,0 +1,48 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+>
+    <VBox id="idVbox">
+        <Table id="Table">
+            <columns>
+                <Column id="idFName">
+                    <Text
+                        id="idText1"
+                        text="FName"
+                    />
+                </Column>
+                <Column id="idLName">
+                    <Text
+                        id="idText2"
+                        text="LName"
+                    />
+                </Column>
+                <Column id="idAge">
+                    <Text
+                        id="idText3"
+                        text="LName"
+                    />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem id="idColumnListItem">
+                    <cells>
+                        <Text
+                            id="idcellText1"
+                            text=""
+                        />
+                        <Text
+                            id="idCellText2"
+                            text=""
+                        />
+                        <Text
+                            id="idCellText3"
+                            text=""
+                        />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </VBox>
+</core:FragmentDefinition>

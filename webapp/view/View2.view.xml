@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="com.app.project1.controller.View2"
+    displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Text
+        id="idText"
+        text="This is view 2"
+    />
+    <Button
+        id="idBtnback"
+        type="Emphasized"
+        text="back"
+        press="onPressSignUpIn_View2"
+    />
+    <core:Fragment
+        type="XML"
+        fragmentName="com.app.project1.fragments.table"
+    />
+</mvc:View>
