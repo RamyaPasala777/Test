@@ -13,7 +13,7 @@ sap.ui.define(
             loadFragment: async function (sFragmentName) {
                 const oFragment = await Fragment.load({
                     id: this.getView().getId(),
-                    name: `com.app.project1.fragments.${sFragmentName}`,
+                    name: `com.app..fragments.${sFragmentName}`,
                     controller: this
                 });
                 this.getView().addDependent(oFragment);
