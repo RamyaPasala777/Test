@@ -19,4 +19,5 @@
         type="XML"
         fragmentName="com.app.project1.fragments.table"
     />
+    <Button id="clickHere" text="Click Here" press="onClickBtnPress"></Button>
 </mvc:View>

@@ -3,20 +3,26 @@
     displayBlock="true"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:html1="sap.ui.core.HTML"
     xmlns="sap.m"
 >
     <Page id="page">
+    <html:div>
+    <Text id="idHtmlText" text="DIV TAG"/>
+    </html:div>
         <VBox
             id="VBox"
             alignContent="Center"
             alignItems="Center"
             class="sapUiSmallMarginTop"
         >
-            <HBox>
+            <HBox id="idHbox11">
                 <Label
                     id="Label1"
+                    class="sapUiTinyMarginTop"
                     text="Username:"
-                    width="100%"
+                    width="100px"
                 />
                 <Input
                     id="Input1"
@@ -24,11 +30,12 @@
                     width="100%"
                 />
             </HBox>
-            <HBox>
+            <HBox id="idHbox22">
                 <Label
                     id="Label2"
+                    class="sapUiTinyMarginTop"
                     text="Password:"
-                    width="100%"
+                    width="100px"
                 />
                 <Input
                     id="input2"
@@ -36,18 +43,21 @@
                     width="100%"
                 />
             </HBox>
+            <HBox id="idBtnHbox">
             <Button
                 id="Btn"
                 text="Login"
+                 class="sapUiSmallMarginEnd"
                 type="Emphasized"
                 press="onPress"
             />
           <Button
                 id="Btn2"
                 text="SignUp"
-                type="Emphasized"
+                type="Emphasized"              
                 press="onSignupBtnPress"
             />
+            </HBox>
         </VBox>
         <VBox id="VBox2">
             <core:Fragment
